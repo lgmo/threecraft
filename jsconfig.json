@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",                 // Define a versão do JavaScript alvo (ES6 ou superior)
+    "module": "commonjs",            // Usa módulos CommonJS
+    "checkJs": true,                 // Habilita checagem de erros em arquivos .js
+    "jsx": "preserve",               // Caso use React, mantém o JSX
+    "baseUrl": ".",                  // Define a raiz para caminhos relativos
+    "paths": {                       // Crie atalhos para caminhos de importação (opcional)
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",                      // Inclui todos os arquivos na pasta src
+  ],
+  "exclude": [
+    "node_modules",                  // Exclui node_modules
+    "dist"                           // Exclui pasta de build
+  ]
+}
+
